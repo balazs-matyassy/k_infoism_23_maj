@@ -45,6 +45,11 @@ def fajlbol_utasszallitok(fajlnev):
     return utasszallitok
 
 
+# 6.1. érettségi feladat: maximális utasszámot visszaadó segédfüggvény létrehozása
+# Pl. '220-336' -> 336
+# Pl. '218' -> 218
+
+
 # 4. feladat: beolvasás tesztelése
 utasszallitok = fajlbol_utasszallitok('utasszallitok.txt')
 # print(utasszallitok)
