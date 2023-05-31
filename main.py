@@ -9,6 +9,7 @@ class Utasszallito:
         self.felszallotomeg = felszallotomeg
         self.fesztav = fesztav
 
+
 # 2. feladat: sorokat (a fájl 1 sorát) példányokká alakító függvény létrehozása
 def sorbol_utasszallito(sor):
     sor = sor.strip()  # enter levágása a sor végéről
@@ -25,3 +26,6 @@ def sorbol_utasszallito(sor):
     utasszallito = Utasszallito(tipus, ev, utas, szemelyzet, utazosebesseg, felszallotomeg, fesztav)
 
     return utasszallito
+
+
+# 3. feladat: fájlból utasszállítókat beolvasó függvény létrehozása
