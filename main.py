@@ -9,6 +9,7 @@ class Utasszallito:
         self.felszallotomeg = felszallotomeg
         self.fesztav = fesztav
 
+    @property
     def max_utasszam(self):
         if '-' in self.utas:
             ertekek = self.utas.split('-')
@@ -90,7 +91,7 @@ print(f'5. feladat: Boeing típusok száma: {boeingek_szama}')
 legtobb_utast_szallito = utasszallitok[0]
 
 for utasszallito in utasszallitok:
-    if utasszallito.max_utasszam() > legtobb_utast_szallito.max_utasszam():
+    if utasszallito.max_utasszam > legtobb_utast_szallito.max_utasszam:
         legtobb_utast_szallito = utasszallito
 
 print('6. feladat: A legtöbb utast szállító repülőgéptípus:')
