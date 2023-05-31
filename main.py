@@ -79,3 +79,15 @@ print(f'5. feladat: Boeing típusok száma: {boeingek_szama}')
 # utasok száma „tól-ig” formában (például: 150-179) van megadva, akkor mindig az „ig”
 # értéket használja az összehasonlításnál! A típus adatait a feladat végén található minta szerint
 # írja a képernyőre! Feltételezheti, hogy nem alakult ki az élen holtverseny!
+legtobb_utast_szallito = utasszallitok[0]
+
+for utasszallito in utasszallitok:
+    if max_utasszam(utasszallito) > max_utasszam(legtobb_utast_szallito):
+        legtobb_utast_szallito = utasszallito
+
+print('6. feladat: A legtöbb utast szállító repülőgéptípus:')
+print(f'\tTípus: {legtobb_utast_szallito.tipus}')
+print(f'\tElső felszállás: {legtobb_utast_szallito.ev}')
+print(f'\tUtasok száma: {legtobb_utast_szallito.utas}')
+print(f'\tSzemélyzet: {legtobb_utast_szallito.szemelyzet}')
+print(f'\tUtazósebesség: {legtobb_utast_szallito.utazosebesseg}')
