@@ -9,6 +9,13 @@ class Utasszallito:
         self.felszallotomeg = felszallotomeg
         self.fesztav = fesztav
 
+    def max_utasszam(self):
+        if '-' in self.utas:
+            ertekek = self.utas.split('-')
+            return int(ertekek[1])
+        else:
+            return int(self.utas)
+
 
 # 2. feladat: sorokat (a fájl 1 sorát) példányokká alakító függvény létrehozása
 def sorbol_utasszallito(sor):
@@ -45,17 +52,6 @@ def fajlbol_utasszallitok(fajlnev):
     return utasszallitok
 
 
-# 6.1. érettségi feladat: maximális utasszámot visszaadó segédfüggvény létrehozása
-# Pl. '220-336' -> 336
-# Pl. '218' -> 218
-def max_utasszam(utasszallito):
-    if '-' in utasszallito.utas:
-        ertekek = utasszallito.utas.split('-')
-        return int(ertekek[1])
-    else:
-        return int(utasszallito.utas)
-
-
 # 4. feladat: beolvasás tesztelése
 utasszallitok = fajlbol_utasszallitok('utasszallitok.txt')
 # print(utasszallitok)
@@ -82,7 +78,7 @@ print(f'5. feladat: Boeing típusok száma: {boeingek_szama}')
 legtobb_utast_szallito = utasszallitok[0]
 
 for utasszallito in utasszallitok:
-    if max_utasszam(utasszallito) > max_utasszam(legtobb_utast_szallito):
+    if utasszallito.max_utasszam() > legtobb_utast_szallito.max_utasszam():
         legtobb_utast_szallito = utasszallito
 
 print('6. feladat: A legtöbb utast szállító repülőgéptípus:')
