@@ -46,3 +46,5 @@ def fajlbol_utasszallitok(fajlnev):
 
 
 # 4. feladat: beolvasás tesztelése
+utasszallitok = fajlbol_utasszallitok('utasszallitok.txt')
+print(utasszallitok)
