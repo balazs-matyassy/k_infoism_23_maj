@@ -48,6 +48,12 @@ def fajlbol_utasszallitok(fajlnev):
 # 6.1. érettségi feladat: maximális utasszámot visszaadó segédfüggvény létrehozása
 # Pl. '220-336' -> 336
 # Pl. '218' -> 218
+def max_utasszam(utasszallito):
+    if '-' in utasszallito.utas:
+        ertekek = utasszallito.utas.split('-')
+        return int(ertekek[1])
+    else:
+        return int(utasszallito.utas)
 
 
 # 4. feladat: beolvasás tesztelése
