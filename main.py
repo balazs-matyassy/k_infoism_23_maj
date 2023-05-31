@@ -56,3 +56,10 @@ print(f'4. feladat: Adatsorok száma: {len(utasszallitok)}')
 # 5. érettségi feladat: Határozza meg és írja ki a képernyőre a Boeing vállalat által gyártott repülőgéptípusok
 # darabszámát! Feltételezheti, hogy minden általuk gyártott típus neve a „Boeing”
 # szórészlettel kezdődik.
+boeingek_szama = 0
+
+for utasszallito in utasszallitok:
+    if utasszallito.tipus.startswith('Boeing'):
+        boeingek_szama += 1
+
+print(f'5. feladat: Boeing típusok száma: {boeingek_szama}')
