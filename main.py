@@ -43,3 +43,6 @@ def fajlbol_utasszallitok(fajlnev):
     fajl.close()
 
     return utasszallitok
+
+
+# 4. feladat: beolvasás tesztelése
