@@ -16,6 +16,18 @@ class Utasszallito:
         else:
             return int(self.utas)
 
+    # példány olvasható megjelenítése debuggerben
+    def __repr__(self):
+        return 'Utasszallito(' + \
+            f'tipus={self.tipus}, ev={self.ev}, utas={self.utas}, szemelyzet={self.szemelyzet}' + \
+            f', utazosebesseg={self.utazosebesseg}, felszallotomeg={self.felszallotomeg}, fesztav={self.fesztav})'
+
+    # példány olvasható megjelenítése print paramétereként
+    def __str__(self):
+        return 'Utasszallito(' + \
+            f'tipus={self.tipus}, ev={self.ev}, utas={self.utas}, szemelyzet={self.szemelyzet}' + \
+            f', utazosebesseg={self.utazosebesseg}, felszallotomeg={self.felszallotomeg}, fesztav={self.fesztav})'
+
 
 # 2. feladat: sorokat (a fájl 1 sorát) példányokká alakító függvény létrehozása
 def sorbol_utasszallito(sor):
