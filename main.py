@@ -47,4 +47,7 @@ def fajlbol_utasszallitok(fajlnev):
 
 # 4. feladat: beolvasás tesztelése
 utasszallitok = fajlbol_utasszallitok('utasszallitok.txt')
-print(utasszallitok)
+# print(utasszallitok)
+
+# 4. érettségi feladat: Határozza meg és írja ki a képernyőre a forrásállományban lévő adatsorok
+# (repülőgéptípusok) darabszámát!
