@@ -51,3 +51,4 @@ utasszallitok = fajlbol_utasszallitok('utasszallitok.txt')
 
 # 4. érettségi feladat: Határozza meg és írja ki a képernyőre a forrásállományban lévő adatsorok
 # (repülőgéptípusok) darabszámát!
+print(f'4. feladat: Adatsorok száma: {len(utasszallitok)}')
