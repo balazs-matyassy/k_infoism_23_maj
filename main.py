@@ -29,3 +29,17 @@ def sorbol_utasszallito(sor):
 
 
 # 3. feladat: fájlból utasszállítókat beolvasó függvény létrehozása
+def fajlbol_utasszallitok(fajlnev):
+    fajl = open(fajlnev, encoding='utf-8')
+    utasszallitok = []
+
+    # Ha van, akkor be kell olvasni a fejlécet.
+    fejlec = fajl.readline()
+
+    for sor in fajl:
+        utasszallito = sorbol_utasszallito(sor)
+        utasszallitok.append(utasszallito)
+
+    fajl.close()
+
+    return utasszallitok
