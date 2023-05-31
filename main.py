@@ -8,3 +8,5 @@ class Utasszallito:
         self.utazosebesseg = utazosebesseg
         self.felszallotomeg = felszallotomeg
         self.fesztav = fesztav
+
+# 2. feladat: sorokat (a fájl 1 sorát) példányokká alakító függvény létrehozása
