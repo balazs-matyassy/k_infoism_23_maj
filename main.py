@@ -63,3 +63,8 @@ for utasszallito in utasszallitok:
         boeingek_szama += 1
 
 print(f'5. feladat: Boeing típusok száma: {boeingek_szama}')
+
+# 6. érettségi feladat: Határozza meg azt a repülőgéptípust, amely a legtöbb utas szállítására volt alkalmas! Ha az
+# utasok száma „tól-ig” formában (például: 150-179) van megadva, akkor mindig az „ig”
+# értéket használja az összehasonlításnál! A típus adatait a feladat végén található minta szerint
+# írja a képernyőre! Feltételezheti, hogy nem alakult ki az élen holtverseny!
